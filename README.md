@@ -1,4 +1,4 @@
-korean
+korean [![Build Status](https://travis-ci.org/atomaths/korean.png)](https://travis-ci.org/atomaths/korean)
 ======
 korean Go package is just a wrapper in which EUC-KR, encoder, decoder in code.google.com/p/go.text/encoding/korean package.
 

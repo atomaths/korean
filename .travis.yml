@@ -1,0 +1,9 @@
+language: go
+
+go:
+  - 1.1.2
+
+install:
+  - code.google.com/p/go.text/transform
+  - code.google.com/p/go.text/encoding
+  - code.google.com/p/go.text/encoding/korean
