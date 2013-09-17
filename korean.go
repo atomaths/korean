@@ -2,8 +2,9 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-// Package korean wraps EUC-KR encoder, decoder in
-// code.google.com/p/go.text/encoding/korean package.
+// Package korean provides Korean encodings such as EUC-KR and CP949.
+// It is a wrapper of code.google.com/p/go.text/encoding/korean package
+// for easy to use.
 package korean
 
 import (
