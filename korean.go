@@ -18,9 +18,9 @@ const (
 	defaultBufSize = 4096
 )
 
-// Transform writes to dst the transformed bytes read from src, and
+// trans writes to dst the transformed bytes read from src, and
 // returns dst bytes slice written and src bytes read.
-func Transform(t transform.Transformer, src []byte) (dst []byte, err error) {
+func trans(t transform.Transformer, src []byte) (dst []byte, err error) {
 	switch reflect.TypeOf(t).Name() {
 	case "eucKRDecoder":
 		dst = make([]byte, len(src)+len(src)/2)
@@ -46,10 +46,10 @@ func Transform(t transform.Transformer, src []byte) (dst []byte, err error) {
 
 // UTF8 converts from EUC-KR bytes to UTF-8 bytes.
 func UTF8(src []byte) (dst []byte, err error) {
-	return Transform(korean.EUCKR.NewDecoder(), src)
+	return trans(korean.EUCKR.NewDecoder(), src)
 }
 
 // EUCKR converts from UTF-8 bytes to EUC-KR bytes.
 func EUCKR(src []byte) (dst []byte, err error) {
-	return Transform(korean.EUCKR.NewEncoder(), src)
+	return trans(korean.EUCKR.NewEncoder(), src)
 }
