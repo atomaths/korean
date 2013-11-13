@@ -20,5 +20,8 @@ _cgo_export.*
 _testmain.go
 
 *.exe
+*.test
+
+# Vim swap files
 *.swp
 *.swo
