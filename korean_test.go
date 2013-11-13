@@ -5,7 +5,10 @@ package korean
 
 import (
 	"bytes"
+	"fmt"
 	"testing"
+
+	"code.google.com/p/go.text/encoding/korean"
 )
 
 var basicTestCases = []struct {
@@ -41,4 +44,21 @@ func TestBasics(t *testing.T) {
 			}
 		}
 	}
+}
+
+func TestTrans(t *testing.T) {
+	trans(korean.EUCKR.NewDecoder(), []byte("고퍼"))
+}
+
+// TODO(atomaths): fill correct benchmark test case.
+func BenchmarkTrans(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+	}
+}
+
+func ExampleTest() {
+	dst, _ := UTF8([]byte("\xb9\xe6\xb0\xa1\xb9\xe6\xb0\xa1\x20\xb0\xed\xc6\xdb"))
+	fmt.Printf("%s", dst)
+	// Output:
+	// 방가방가 고퍼
 }
