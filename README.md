@@ -30,3 +30,7 @@ for _, v := range dst {
         // Output: \xb9\xe6\xb0\xa1\xb9\xe6\xb0\xa1\x20\xb0\xed\xc6\xdb
 }
 ```
+
+Documentation
+=============
+[![GoDoc](https://godoc.org/github.com/atomaths/korean?status.png)](http://godoc.org/github.com/atomaths/korean)
