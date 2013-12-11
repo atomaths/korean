@@ -5,6 +5,7 @@
 // Package korean provides Korean encodings such as EUC-KR and CP949.
 // It is a wrapper of code.google.com/p/go.text/encoding/korean package
 // for easy to use.
+
 package korean
 
 import (
