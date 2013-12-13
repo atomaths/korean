@@ -1,7 +1,8 @@
 korean
 ======
 [![Build Status](https://travis-ci.org/atomaths/korean.png?branch=master)](https://travis-ci.org/atomaths/korean)
-[![](https://codebot.io/badge/github.com/atomaths/korean.png)](http://codebot.io/doc/pkg/github.com/atomaths/korean)
+[![CodeBot Status](https://codebot.io/badge/github.com/atomaths/korean.png)](http://codebot.io/doc/pkg/github.com/atomaths/korean)
+[![Coverage Status](https://coveralls.io/repos/atomaths/korean/badge.png)](https://coveralls.io/r/atomaths/korean)
 
 Package korean provides Korean encodings such as EUC-KR and CP949. It is a wrapper of code.google.com/p/go.text/encoding/korean package for easy to use.
 
