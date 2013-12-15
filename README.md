@@ -1,4 +1,4 @@
-korean
+Korean
 ======
 [![Build Status](https://travis-ci.org/atomaths/korean.png?branch=master)](https://travis-ci.org/atomaths/korean)
 [![CodeBot Status](https://codebot.io/badge/github.com/atomaths/korean.png)](http://codebot.io/doc/pkg/github.com/atomaths/korean)
