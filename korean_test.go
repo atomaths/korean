@@ -57,9 +57,9 @@ func BenchmarkTrans(b *testing.B) {
 	}
 }
 
-func ExampleTest() {
+func Example() {
 	dst, _ := UTF8([]byte("\xb9\xe6\xb0\xa1\xb9\xe6\xb0\xa1\x20\xb0\xed\xc6\xdb"))
-	fmt.Printf("%s", dst)
+	fmt.Printf("%s\n", dst)
 	// Output:
 	// 방가방가 고퍼
 }
