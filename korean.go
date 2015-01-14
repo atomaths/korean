@@ -11,8 +11,8 @@ package korean
 import (
 	"reflect"
 
-	"code.google.com/p/go.text/encoding/korean"
-	"code.google.com/p/go.text/transform"
+	"golang.org/x/text/encoding/korean"
+	"golang.org/x/text/transform"
 )
 
 const (

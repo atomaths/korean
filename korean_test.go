@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"testing"
 
-	"code.google.com/p/go.text/encoding/korean"
+	kr "golang.org/x/text/encoding/korean"
 )
 
 var basicTestCases = []struct {
@@ -48,7 +48,7 @@ func TestBasics(t *testing.T) {
 }
 
 func TestTrans(t *testing.T) {
-	trans(korean.EUCKR.NewDecoder(), []byte("고퍼"))
+	trans(kr.EUCKR.NewDecoder(), []byte("고퍼"))
 }
 
 // TODO(atomaths): fill correct benchmark test case.
