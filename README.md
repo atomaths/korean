@@ -22,7 +22,7 @@ import "github.com/atomaths/korean"
 
 ```Go
 src := "\xb9\xe6\xb0\xa1\xb9\xe6\xb0\xa1\x20\xb0\xed\xc6\xdb"
-dst, _ := korean.UTF8([]byte(s))
+dst, _ := korean.UTF8([]byte(src))
 fmt.Println(string(dst)) // Output: 방가방가 고퍼
 ```
 
